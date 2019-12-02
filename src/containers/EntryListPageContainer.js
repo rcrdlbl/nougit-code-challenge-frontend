@@ -1,17 +1,17 @@
 import React, { Component } from 'react'
 
+import EntryListContainer from './EntryListContainer'
+
 class EntryListPageContainer extends Component {
     state = {
-        sortBy: "Date",
+        sortBy: "date",
         sortTrending: false,
         completionFilter: "none"
     }
     
     render() {
         return (
-            <div>
-                Entry List Page Container
-            </div>
+            <EntryListContainer />
         )
     }
 }
