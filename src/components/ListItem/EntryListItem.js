@@ -1,9 +1,19 @@
-import React from 'react'
+import React from "react";
+import styled from "styled-components";
 
-const EntryListItem = (props) => {
-    return (
-        <h1>{props.entry.title} -- {props.entry.author.name}</h1>
-    )
-}
+const SingleEntry = styled.div`
+  border: 1px solid;
+  font-size: 1.5rem;
+  padding: 20px;
+  margin: 20px;
+`;
 
-export default EntryListItem
+const EntryListItem = ({ entry }) => {
+  return (
+    <SingleEntry>
+      {entry.title} -- {entry.author.name}
+    </SingleEntry>
+  );
+};
+
+export default EntryListItem;
